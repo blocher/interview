@@ -1,7 +1,10 @@
 {
     "name": "laravel/laravel",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -61,7 +64,8 @@
         "symfony/filesystem": "^3.3",
         "symfony/proxy-manager-bridge": "^3.3",
         "symfony/psr-http-message-bridge": "^1.0",
-        "symfony/yaml": "^3.3"
+        "symfony/yaml": "^3.3",
+        "tcg/voyager": "^1.0"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
@@ -84,8 +88,7 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": [
-            ]
+            "dont-discover": []
         }
     },
     "scripts": {
@@ -104,5 +107,11 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
+    },
+    "repositories": {
+        "hooks": {
+            "type": "composer",
+            "url": "https://larapack.io"
+        }
     }
 }
